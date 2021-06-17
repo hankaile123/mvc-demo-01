@@ -1,0 +1,25 @@
+.demo2 {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.demo2 .tabbar {
+    display: flex;
+    cursor: pointer;
+}
+
+.demo2 .tabbar .tab {
+    width: 50vw;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.demo2 div[class*='current'] {
+    background-color: rgba(253, 221, 155, .4);
+}
+
+.demo2>div {
+    text-align: center;
+}

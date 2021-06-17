@@ -1,0 +1,30 @@
+.demo4 {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo4 .round {
+    border: 1px solid #ccc;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}
+
+@keyframes color {
+    0% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: hotpink;
+    }
+    100% {
+        background-color: skyblue;
+    }
+}
+
+.demo4 .round[class*="active"] {
+    animation: color 1.5s linear infinite alternate;
+}
